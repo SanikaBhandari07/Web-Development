@@ -1,1 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<form>
+    <h3>Register for Online Training</h3>
+    
+    <div>Username 
+        <input type="text" placeholder="Enter Username" />
+    </div>
+    <br />
+
+    <div>Password 
+        <input type="password" />
+    </div>
+    <br />
+
+    <div>Contact &nbsp;&nbsp;&nbsp;<input type="number" /></div>
+    <br /><br />
+
+    <div>Email &nbsp;&nbsp;&nbsp;&nbsp;
+        <input type="email" />
+    </div>
+    <br />
+
+    Select technologies needed:
+    <input type="checkbox" value="HTML" checked />HTML
+    <input type="checkbox" value="CSS" checked />CSS
+    <input type="checkbox" value="JS" checked />JS <br />
+    <br />
+
+
+    
+    Select the training mode :
+    <input type="radio" name = "training" checked >Classroom
+    <input type="radio" name = "training" checked >Online
+    <br /> </br>
+
+    <label for = "level">Skill Level</label>
+    <select name="level_of_skill" id="level">
+        <option value = "Beginner level">Begineer</option>
+        <option value = "Intermediate level">Intermediate</option>
+        <option value = "Advance level">Advance</option>
+    </select>
+
+    countries : 
+    <input list="countries">
+        <datalist id = "countries">
+            <option value = "India">India</option>
+            <option value="Singapore">Singapore</option>
+            <option value="USA">USA</option>
+        </datalist>
+        <br /> </br>
+        <!-- select element defines a drop down list
+        datalist element defines a predifined for <input tag>
+        select : you can only select in that liust only and u cant search for the thing 
+        datalist : you can type your own country or can search for any thing-->
+    Enter the website URL : <input type = "url" /></br> <br />
+
+
+
+    <div>
+        <label for="desc">Course description </label><br />
+        <textarea name="'description" rows="10" cols="30" id="desc"></textarea>
+    </div>
+
+    <input type="hidden" value="english"/></br>
+    <button> Submit</button>
+
+</form>
 
