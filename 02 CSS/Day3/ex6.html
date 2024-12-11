@@ -1,1 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo-Classes with Attribute Selectors</title>
+    <style>
+        /* Style required input fields */
+        input[type="text"]:required {
+            border: 2px solid red;
+            background-color: lightyellow;
+        }
+
+        /* Style optional input fields */
+        input[type="email"]:optional {
+            border: 2px solid blue;
+            background-color: lightblue;
+        }
+
+        /* Style disabled buttons */
+        button:disabled {
+            background-color: gray;
+            color: white;
+        }
+
+        /* Style enabled buttons */
+        button:enabled {
+            background-color: lightgreen;
+            color: black;
+        }
+
+        /* Style checked checkboxes */
+        input[type="checkbox"]:checked {
+            background-color: yellow;
+        }
+
+        /* Style unchecked checkboxes */
+        input[type="checkbox"]:not(:checked) {
+            background-color: lightcoral;
+        }
+
+        /* Style valid input fields */
+        input:valid {
+            border-color: green;
+        }
+
+        /* Style invalid input fields */
+        input:invalid {
+            border-color: red;
+        }
+
+        /* Style hover on active buttons */
+        button:hover:enabled {
+            background-color: green;
+            color: white;
+        }
+
+        /* Style focused input fields */
+        input:focus {
+            border-color: rgb(128, 0, 128);
+            outline: none;
+        }
+
+        /* Style read-only input fields */
+        input[readonly] {
+            background-color: lightgray;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Form with 11 Pseudo-Classes and Attribute Selectors</h1>
+
+    <form>
+        <!-- Required Text Input -->
+        <label for="name">Name (Required):</label>
+        <input type="text" id="name" name="name" required><br><br>
+
+        <!-- Email Input (Optional) -->
+        <label for="email">Email (Optional):</label>
+        <input type="email" id="email" name="email"><br><br>
+
+        <!-- Read-Only Input -->
+        <label for="readonly">Read-Only Input:</label>
+        <input type="text" id="readonly" value="Read-Only Field" readonly><br><br>
+
+        <!-- Checkbox Input (Checked) -->
+        <label for="subscribe">Subscribe to Newsletter:</label>
+        <input type="checkbox" id="subscribe" name="subscribe" checked><br><br>
+
+        <!-- Checkbox Input (Unchecked) -->
+        <label for="terms">Agree to Terms:</label>
+        <input type="checkbox" id="terms" name="terms"><br><br>
+
+        <!-- Disabled Button -->
+        <button type="button" disabled>Disabled Button</button><br><br>
+
+        <!-- Active Submit Button -->
+        <button type="submit">Submit</button>
+    </form>
+
+</body>
+</html>
 
