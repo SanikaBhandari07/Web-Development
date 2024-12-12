@@ -1,1 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo-Element Example with ::marker</title>
+    <style>
+        /* ::before pseudo-element */
+        p::before {
+            content: "Note: ";    /* Adds content before the paragraph */
+            font-weight: bold;
+            color: red;
+        }
+
+        /* ::after pseudo-element */
+        p::after {
+            content: " (Read more)";  /* Adds content after the paragraph */
+            font-style: italic;
+            color: blue;
+        }
+
+        /* ::first-letter pseudo-element */
+        p::first-letter {
+            font-size: 2em;    /* Makes the first letter larger */
+            color: green;
+        }
+
+        /* ::first-line pseudo-element */
+        p::first-line {
+            font-weight: bold;  /* Makes the first line bold */
+        }
+
+        /* ::selection pseudo-element */
+        ::selection {
+            background-color: yellow; /* Changes background color of selected text */
+            color: black;
+        }
+
+        /* ::marker pseudo-element */
+        ul li::marker {
+            color: blue;          /* Changes the color of list markers (bullets) */
+            font-size: 1.5em;     /*Increases the size of the marker */
+        }
+    </style>
+</head>
+<body>
+
+    <p>This is an example of pseudo-elements in CSS. The first letter is larger, the first line is bold, and additional content is added before and after the paragraph using pseudo-elements.</p>
+
+    <ul>
+        <li>Item one</li>
+        <li>Item two</li>
+        <li>Item three</li>
+    </ul>
+
+</body>
+</html>
 
