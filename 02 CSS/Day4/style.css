@@ -1,1 +1,9 @@
+.special {
+    color: red;
+}
+
+p:nth-of-type(2){
+    color :blue;
+}
+
 
